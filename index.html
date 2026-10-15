@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filip Trzmiel - Portfolio Inżynierskie</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <nav class="pasek-nawigacji">
+        <div class="logo-autora">FT.</div>
+        <ul class="spis-linkow">
+            <li><a href="#o-mnie">O mnie</a></li>
+            <li><a href="#projekty">Projekty</a></li>
+            <li><a href="#linki">Zasoby</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="powitanie-naglowek">
+        <h1 class="glowne-imie">Filip Trzmiel</h1>
+        <p class="podpis-specjalizacja">Student Cyberbezpieczeństwa</p>
+    </header>
+
+    <main class="srodek-strony">
+        <section id="o-mnie" class="blok-informacyjny">
+            <article class="tresc-o-mnie">
+                <h2>Kilka słów o mnie</h2>
+                <p><p>Obecnie studiuję na trzecim semestrze Cyberbezpieczeństwa na Akademii Górniczo-Hutniczej. Moje główne zainteresowania
+                    skupiają się wokół szeroko pojętego bezpieczeństwa IT oraz technik śledczych OSINT. W wolnym czasie regularnie gram
+                    w szachy, co świetnie rozwija myślenie analityczne i strategiczne. Moim głównym celem zawodowym na przyszłość jest
+                    podjęcie pracy jako analityk w Security Operations Center (SOC).</p></p>
+
+                <div id="weather-box" class="pudelko-na-pogode"></div>
+                <div id="calendar-box" class="pudelko-na-kalendarz"></div>
+            </article>
+            <aside class="ramka-na-zdjecie">
+                <img src="assets/zdjecie_mnie.jpg" alt="Zdjęcie profilowe" class="fotografia-studenta">
+            </aside>
+        </section>
+
+        <section id="projekty" class="blok-realizacji">
+            <h2>Wybrane Projekty</h2>
+            <div class="siatka-z-kartami">
+                <article class="karta-pracy">
+                    <svg class="ikona-karty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <h3>Symulacje Sieciowe</h3>
+                    <p>Zaawansowane konfiguracje topologii sieciowych LAN i WAN realizowane w Cisco Packet Tracer z
+                        uwzględnieniem protokołów routingu.</p>
+                    <span class="znacznik-tematu">Sieci</span>
+                </article>
+
+                <article class="karta-pracy">
+                    <svg class="ikona-karty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                        <line x1="9" y1="20" x2="15" y2="20"></line>
+                        <line x1="12" y1="4" x2="12" y2="20"></line>
+                    </svg>
+                    <h3>Automatyzacja i Skrypty</h3>
+                    <p>Zestaw narzędzi napisanych w Pythonie oraz C służących do monitorowania wydajności operacji oraz
+                        analizy zdarzeń w logach.</p>
+                    <span class="znacznik-tematu">Programowanie</span>
+                </article>
+
+                <article class="karta-pracy">
+                    <svg class="ikona-karty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <h3>Infrastruktura Linux</h3>
+                    <p>Konfiguracja, hardening i utrzymanie maszyn wirtualnych z systemami CentOS Stream i Ubuntu w
+                        bezpiecznych środowiskach izolowanych.</p>
+                    <span class="znacznik-tematu">Administracja</span>
+                </article>
+            </div>
+        </section>
+
+        <div class="podwojny-uklad-dolu">
+            <aside id="linki" class="blok-odsylaczy">
+                <h2>Zewnętrzne Źródła</h2>
+                <ul class="zbior-linkow">
+                    <li><a href="https://developer.mozilla.org/pl/" target="_blank" rel="noopener noreferrer">MDN Web
+                            Docs</a></li>
+                    <li><a href="https://github.com/FilipooV/" target="_blank" rel="noopener noreferrer">Repozytoria GitHub</a>
+                    </li>
+                    <li><a href="https://owasp.org/" target="_blank" rel="noopener noreferrer">OWASP Foundation</a></li>
+                </ul>
+            </aside>
+
+            <section id="kontakt" class="blok-formularza">
+                <h2>Zostaw wiadomość</h2>
+                <form class="pola-do-wypelnienia" action="#" method="POST">
+                    <div class="wiersz-formularza">
+                        <label for="pole-osoba">Imię i nazwisko</label>
+                        <input type="text" id="pole-osoba" name="osoba" required placeholder="Jan Kowalski">
+                    </div>
+                    <div class="wiersz-formularza">
+                        <label for="pole-poczta">Adres e-mail</label>
+                        <input type="email" id="pole-poczta" name="poczta" required placeholder="adres@przyklad.pl">
+                    </div>
+                    <div class="wiersz-formularza">
+                        <label for="pole-tekst">Treść wiadomości</label>
+                        <textarea id="pole-tekst" name="tekst" required minlength="10"
+                            placeholder="Minimum 10 znaków..."></textarea>
+                    </div>
+                    <button type="submit" class="guzik-wysylki">Wyślij wiadomość</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="dol-witryny">
+        <p>&copy; 2026 Filip - Wizytówka. Projekt na Laboratorium 01.</p>
+    </footer>
+</body>
+
+</html>
